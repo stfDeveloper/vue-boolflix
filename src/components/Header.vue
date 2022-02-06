@@ -3,19 +3,25 @@
     <div class="" id="header">
         <img src="../assets/style/logo.png" alt="">
     </div>
+     <Search @find="filter"/>
 </div>
 </template>
 
 
 <script>
+import Search from "../sections/Search.vue"
 
 
 export default {
     name: "Header",
     components:{
+        Search,
 
     },
     methods:{
+         filter: function(inputFilter){
+          this.$emit('showFilter',inputFilter)
+      },
     }
 } 
 </script>
