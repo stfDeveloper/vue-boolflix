@@ -1,7 +1,6 @@
 <template>
 <div>
-    <input id="input" class="text-center" type="text" placeholder="Cerca film o serie TV" v-model="input">
-    <button @click="$emit('find', input)" id="button">Cerca</button>
+    <input id="input" class="text-center" type="text" placeholder="Cerca film o serie TV" v-model="input" @keyup="$emit('find',input)">
 </div>
   
 </template>

@@ -11,16 +11,8 @@ import Main from './components/Main.vue'
 
 export default {
   name: 'App',
-  data(){
-    return {
-      arrayMovies:[]
-    }
-  },
   components: {
     Main
-  },
-  methods:{
-   
   },
 }
 
